@@ -1,0 +1,25 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*=========================reset================*/
+html,body{height:100%;}
+body,h1,h2,h3,h4,h5,h6,p,a,img,ul,li,ol,dl,dt,dd,input{ padding:0; margin:0}
+ul,ol{ list-style:none;}
+input{ outline:none;}
+img{ display:block; border:0;}
+html{font-size: 62.5%;}
+
+body{ font-size:12px; color:#333; font-family:"微软雅黑"; background:#fff}
+*{box-sizing: border-box;}
+a{ text-decoration:none; color:#444;}
+a:hover{
+  text-decoration: none!important;
+}
+/*========================public================*/
+/* .w{ width:1252px; margin:0 auto} */
+.l{ float:left;}
+.r{ float:right}
+
+
+
+

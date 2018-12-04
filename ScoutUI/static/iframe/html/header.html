@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>vue点击切换改变内容</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .nice-wrap{
+      /*width: 400px;*/
+      height: 200px;
+      /*border: 1px solid #eee;*/
+    }
+    .aa{
+      cursor: pointer;
+      /*width: 400px;*/
+      line-height: 50px;
+      /*text-align: center;*/
+      text-indent: 1rem;
+      background: #f6f6f6;
+    }
+    .bgColor{
+      background: #3399ff;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <div class="nice-wrap">
+    <div v-for="(list,index) in singer" class="aa" :class="{ bgColor:changeRed == index}" @click="change(index)">{{list.a}}</div>
+    <img width="500px" height="200px" src="../img/bg1.gif">
+  </div>
+
+</div>
+<script src="https://cdn.bootcss.com/vue/2.2.2/vue.min.js"></script>
+<script type="text/javascript">
+  new Vue({
+    el:"#app",
+    data:{
+      singer:[
+        {"a":"青春活泼的心，决不作悲哀的留滞。"},
+        {"a":"青年人！你不能像风般飞扬，便应当像山般静止。"},
+        {"a":"青年人呵！为着后来的回忆，小心着意的指你现在的图画。"},
+        {"a":"青年人！信你自己罢！只有你自己是真实的，也只有你能够创造你自己。"}
+      ],
+      changeRed:-1
+    },
+    methods:{
+      change(index){
+        this.changeRed = index;
+      }
+    }
+  })
+</script>
+</body>
+</html>
+
