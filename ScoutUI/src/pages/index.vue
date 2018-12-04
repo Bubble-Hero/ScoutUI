@@ -15,6 +15,9 @@
 </script>
 
 <style scoped>
+  html{
+    background-image:url("../../static/img/bg1.jpg") ;
+  }
 .commonHeader{
   background:rgba(0,0,0,.6)!important;
 }
