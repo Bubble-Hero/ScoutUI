@@ -1,4 +1,4 @@
-<template>
+  <template>
     <!-----------------nearnav------------->
     <div class="nearnav fixed">
       <ul>

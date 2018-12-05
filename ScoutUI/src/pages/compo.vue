@@ -45,9 +45,14 @@
     import GoodlistBox from "../components/compo/goodList/GoodlistBox";
     import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
     import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
+    import SwiperBox from "../components/compo/swiperlist/SwiperBox";
+    import Leftcompon from "../components/compo/Leftlist/Leftcompon";
+    import LeftBox from "../components/compo/Leftlist/LeftBox";
     export default {
         name: "compo",
-      components: {LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
+      components: {
+        LeftBox,
+        Leftcompon, SwiperBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
