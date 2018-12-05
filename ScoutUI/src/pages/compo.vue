@@ -17,7 +17,7 @@
           <common-box></common-box>
           <header-box></header-box>
           <footer-box></footer-box>
-          <!--模板盒子--------------------------->
+          <!--商品列表组件--------------------------->
           <goodlist-box></goodlist-box>
           <!-------------登录注册组件---------------->
           <login-sub-box></login-sub-box>
@@ -25,6 +25,9 @@
           <swiper-box></swiper-box>
           <!------------响应后台左侧边栏----------->
           <left-box></left-box>
+          <!--上拉菜单组件--------------------------->
+          <slide-up-box></slide-up-box>
+
           <div class="page-component-up-box">
             <div class="page-component-up">
               <i class="glyphicon glyphicon-triangle-top"></i>

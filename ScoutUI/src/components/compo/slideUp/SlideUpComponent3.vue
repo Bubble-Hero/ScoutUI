@@ -1,9 +1,10 @@
 <template>
+  <!--组件单例模板-->
   <div class="con-section">
     <ul class="">
       <li>
-        <h1>商品列表三</h1>
-        <p>带有地址，显示距离，显示价格以及原价。</p>
+        <h1>上拉菜单三</h1>
+        <p>分享上拉菜单，包含分享到微信qq的卡片。</p>
         <p class="ullipLast">如下面实例所示：</p>
         <div class="case">
           <div class="code">
@@ -17,100 +18,117 @@
             <div class="code-body"  style="overflow: auto;">
                     <textarea style="resize:none;" name="" id="" cols="30" rows="10"  readonly="readonly">
 <template>
-  <div>
-  <div>
-    <div class="orderVistsBox">
-      <img src="../../../../assets/img/LOGO.png" alt="">
-      <div class="orderVistsBoxR">
-        <div class="hh1"><h1>羹团</h1><p>8.6km</p></div>
-        <h2>
-          羹团外卖
-        </h2>
-        <h3><p>￥88</p>&nbsp;&nbsp;原价：￥99</h3>
-      </div>
+  <!--..shareTo...-->
+  <div class="shareTo">
+    <p>分享到</p>
+    <div class="shareToi">
+      <a href="">
+        <i class="iconfont shareToi01">&#xe61c;</i>
+        <span>微信好友</span>
+      </a>
+      <a href="">
+        <i class="iconfont shareToi02">&#xe5e3;</i>
+        <span>朋友圈</span>
+      </a>
+      <a href="">
+        <i class="iconfont shareToi03">&#xe6d3;</i>
+        <span>QQ</span>
+      </a>
+      <a href="">
+        <i class="iconfont shareToi04">&#xe658;</i>
+        <span>微博</span>
+      </a>
+      <a href="">
+        <i class="iconfont shareToi05">&#xe648;</i>
+        <span>github</span>
+      </a>
+      <a href="">
+        <i class="iconfont shareToi06">&#xe719;</i>
+        <span>更多</span>
+      </a>
     </div>
+    <div class="off"  @click="goBottom">取消</div>
   </div>
-  <div>
-    <div class="orderVistsBox">
-      <img src="../../../../assets/img/LOGO.png" alt="">
-      <div class="orderVistsBoxR">
-        <div class="hh1"><h1>羹团</h1><p>8.6km</p></div>
-        <h2>
-          羹团外卖
-        </h2>
-        <h3><p>￥88</p>&nbsp;&nbsp;原价：￥99</h3>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div class="orderVistsBox">
-      <img src="../../../../assets/img/LOGO.png" alt="">
-      <div class="orderVistsBoxR">
-        <div class="hh1"><h1>羹团</h1><p>8.6km</p></div>
-        <h2>
-          羹团外卖
-        </h2>
-        <h3><p>￥88</p>&nbsp;&nbsp;原价：￥99</h3>
-      </div>
-    </div>
-  </div>
-  </div>
+
 </template>
 
 <script>
     export default {
-      name: "GoodListExamp3"
+      name: "SlideExamp3"
     }
 </script>
 
 <style scoped>
-  .orderVistsBox{
-    display: flex;
-    border-top: .2rem solid #f7f7f7;
-    padding: 1.4rem 0;
-    background: #ffffff;
+  /*....shareTo....*/
+  .shareTo{
+    width: 94%;
+    margin: 3%;
+    background: #daf0ee;
+    border-radius: .8rem;
+    margin-bottom: 6rem;
+    z-index: 3;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    display: none;
   }
-  .orderVistsBox img{
-    width:7.7rem;
-    height: 5.8rem;
-    margin: auto 0;
-    margin-right: 1rem;
-  }
-  .orderVistsBoxR{
+  .shareTo p{
     width: 100%;
+    height: 5.6rem;
+    line-height: 5.6rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #272727;
+    font-weight: bold;
+  }
+  .shareToi{
+    display: flex;
+    flex-wrap: wrap;
+    padding: .5rem 0;
+  }
+  .shareToi a{
+    width: 25%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
   }
-  .orderVistsBoxR .hh1 {
-    display: flex;
-    justify-content: space-between;
+  .shareToi a i{
+    font-size:3.2rem ;
+    text-align: center;
   }
-  .orderVistsBoxR h1{
-    font-size:1.5rem ;
-    font-weight:100 ;
+  .shareToi a span{
+    font-size: 1.2rem;
+    text-align: center;
+    margin:.8rem;
   }
-  .orderVistsBoxR h1 img{
-    width: 1.5rem;
-    height: 1.5rem;
-    /*margin-top:1rem;*/
+  .off{
+    width: 100%;
+    height: 5rem;
+    line-height: 5rem;
+    text-align: center;
+    font-size: 1.3rem;
+    color: #8f8b8b;
+    border-top: .1rem solid #cecccc;
   }
-  .orderVistsBoxR h2{
-    font-size:1.2rem ;
-    font-weight:100 ;
-    display: flex;
+  .shareToi01{
+    color: #45c77c;
+  }
+  .shareToi02{
+    color: #1ae871;
+  }
+  .shareToi03{
+    color: #30cff1;
+  }
+  .shareToi04{
+    color: #edc00e;
+  }
+  .shareToi05{
+    color: #565348;
+  }
+  .shareToi06{
+    color: #18dba6;
   }
 
-  .orderVistsBoxR h3{
-    font-size:1.2rem ;
-    font-weight:100 ;
-    display: flex;
-    align-items: center;
-  }
-  .orderVistsBoxR h3 p{
-    font-size:1.6rem ;
-    color: #ff5a15;
-  }
 </style>
                     </textarea>
             </div>
@@ -125,7 +143,8 @@
             </div>
             <div class="code-body codeH">
               <!--//....子组件....-->
-              <good-list-examp3></good-list-examp3>
+              <slide-examp3></slide-examp3>
+
             </div>
           </div>
         </div>
@@ -137,14 +156,15 @@
 </template>
 
 <script>
-    import GoodListExamp3 from "./ExampAddress/GoodListExamp3";
-    export default {
-        name: "GoodlistComponent3",
-      components: {GoodListExamp3}
-    }
+
+  import SlideExamp3 from "./slideExamp/SlideExamp3";
+  export default {
+    name: "SlideUpComponent3",
+    components: {SlideExamp3}
+  }
 </script>
 
-  <style scoped>
+<style scoped>
   .con-section{
     width: 100%;
     /*height: 100%;*/
@@ -155,7 +175,7 @@
     width: 100%;
     line-height: 40px;
     font-size: 22px;
-    background: #fff;
+    /*background: #fff;*/
     margin: 20px 0 10px;
   }
   ul li p{
@@ -188,12 +208,12 @@
     background:#f6f6f6
   }
   .code-body{
-    width:100%;
+    width: 100%;
     height: 450px;
     overflow: auto;
   }
   .codeH{
-    width: 90%;
+    width: 70%;
     margin: auto;
   }
   textarea{
@@ -223,4 +243,3 @@
     height: 497px;
     border:1px solid #dddddd }
 </style>
-
