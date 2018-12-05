@@ -19,7 +19,7 @@
         <div class="one">
           <div class="pic">
             <img src="../../../static/img/bb1.jpg" alt="">
-            <div class="show">
+            <div class="shows">
               <img src="../../../static/img/bb1.jpg" alt="">
               <div class="shp">
                 <p>Kevin</p>
@@ -74,7 +74,7 @@
         <div class="one">
           <div class="pic">
             <img src="../../../static/img/2.jpg" alt="">
-            <div class="show">
+            <div class="shows">
               <img src="../../../static/img/2.jpg" alt="">
               <div class="shp">
                 <p>Chaoger</p>
@@ -129,7 +129,7 @@
         <div class="one">
           <div class="pic">
             <img src="../../../static/img/3.png" alt="">
-            <div class="show">
+            <div class="shows">
               <img src="../../../static/img/3.png" alt="">
               <div class="shp">
                 <p>Janew</p>
@@ -184,7 +184,7 @@
         <div class="one">
           <div class="pic">
             <img src="../../../static/img/1.jpg" alt="">
-            <div class="show">
+            <div class="shows">
               <img src="../../../static/img/1.jpg" alt="">
               <div class="shp">
                 <p>Rainment</p>
@@ -239,7 +239,7 @@
         <div class="one last">
           <div class="pic">
             <img src="../../../static/img/n-t-1.png" alt="">
-            <div class="show">
+            <div class="shows">
               <img src="../../../static/img/n-t-1.png" alt="">
               <div class="shp">
                 <p>Joodie</p>
@@ -306,14 +306,10 @@
       components: {IntroSide},
       mounted(){
         $(function () {
-          $('.pic img').hover(function () {
-            $(this).siblings('.show').stop().animate({
-              opacity:"1"
-            })
+          $('.pic').hover(function () {
+            $(this).children('.shows').stop().fadeIn(200)
           },function(){
-            $(this).siblings('.show').stop().animate({
-              opacity:"0"
-            })
+            $(this).children('.shows').stop().fadeOut(200)
           })
         })
       }
@@ -326,6 +322,7 @@
   }
   .introduce{
     margin-top: 2rem;
+    margin-left: 26rem;
     overflow: hidden;
     width: 100%;
     padding: 0 3rem;
@@ -433,7 +430,7 @@
           li a:nth-of-type(1){
           }
         }
-        .show{
+        .shows{
           width: 20rem;
           height: 12rem;
           border: 1px solid #ccc;
@@ -442,8 +439,7 @@
           top: 4rem;
           box-shadow:5px 5px 5px #ccc;
           background: #fff;
-          //display: none!important;
-          opacity: 0;
+          display: none;
           img{
             width: 5rem;
             height: 5rem;
@@ -465,10 +461,11 @@
               font-weight: 600;
             }
             .tw {
-              /*width: 100%;*/
+
               display: flex;
               justify-content: space-between;
               span:nth-of-type(1) {
+                cursor: pointer;
                 display: block;
                 width: 6rem;
                 background: #17b6ad;
@@ -478,6 +475,7 @@
                 margin-top: 2rem;
               }
               span:nth-of-type(2) {
+                cursor: pointer;
                 color: #333;
                 margin-top: 2rem;
                 font-weight: 600;

@@ -71,13 +71,14 @@ ul{
   margin-bottom: 30px;
 }
   .side{
-    width: 290px;
-    background: rgba(0,0,0,.02);
-    padding:18px 0 40px;
-    border: 1px solid lightgray;
-    /*position: fixed;*/
-    /*left: 0;*/
-    /*top: 0;*/
+      width: 290px;
+      background: rgba(0, 0, 0, 0.02);
+      padding: 83px 0 40px;
+      border: 1px solid lightgray;
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
   }
   .logo{
     display: flex;
