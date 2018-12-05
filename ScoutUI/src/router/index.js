@@ -29,14 +29,9 @@ export default new Router({
       path: '/compo',
       component: compo,
       children: [
-        {
-          path: 'logincompon', name: 'loginCompon', component: logincompon,
-          children: [
             {path: '', redirect: 'logincomcon1'},
             {path: 'logincomcon1', name: 'loginComponCon1', component: logincomcon1},
             {path: 'logincomcon2', name: 'loginComCon2', component: logincomcon2},
-          ]
-        },
       ]
     },
     {

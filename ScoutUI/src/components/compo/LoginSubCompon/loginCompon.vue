@@ -1,5 +1,13 @@
 <template>
-  <div>
+  <div class="all">
+    <header>
+      <p>
+        <router-link to="/me">
+          <i class="iconfont" style="color: #88dad3;">&#xe66b;</i>
+        </router-link>
+      </p>
+      <p>帮助</p>
+    </header>
     <div class="section-tel">
       <div class="area">
         <p class="eightsix">+86</p>
@@ -18,8 +26,11 @@
 </script>
 
 <style scoped>
+  .all{
+    /*margin:40px auto;*/
+    padding: 30px 100px;
+  }
   .logining{
-
     position: fixed;
     background-color: rgba(0,0,0,.2);
     height: 100%;
@@ -99,12 +110,13 @@
     color: #1bbfb3;
   }
   .eightsix{
-    font-size: 1.6rem;white-space: nowrap;
+    font-size: 1.2rem;
+    white-space: nowrap;
   }
   section h2{
     height: 8rem;
     text-align: center;
-    font-size: 2.6rem;
+    font-size: 1.2rem;
     background: #fff;
     letter-spacing:0.2rem ;
   }

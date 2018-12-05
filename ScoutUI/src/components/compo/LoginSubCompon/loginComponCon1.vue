@@ -3,7 +3,7 @@
     <p>未注册的手机号验证后自动创建美团账户</p>
     <button>获取短信验证码</button>
     <div class="foo-box">
-      <router-link to="/compro/logincompon/logincomcon2">
+      <router-link to="/compo/logincomcon2">
         <p style="color: #666;">密码登录</p>
       </router-link>
         <p style="color: #666;">手动注册</p>

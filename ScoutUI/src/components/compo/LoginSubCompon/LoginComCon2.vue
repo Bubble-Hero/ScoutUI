@@ -11,7 +11,7 @@
       <div class="errbox"></div>
       <button class="sub-btn"  @click="login" type="button">登录</button>
       <div class="login-type">
-        <router-link to="/compro/logincompon/logincomcon1">
+        <router-link to="/compo/logincomcon1">
           <p class="ft">验证码登录</p>
         </router-link>
         <p class="ft">忘记密码</p>

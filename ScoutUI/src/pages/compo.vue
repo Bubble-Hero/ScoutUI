@@ -33,7 +33,8 @@
               <i class="glyphicon glyphicon-triangle-top"></i>
             </div>
           </div>
-
+          <!--------------分类菜单组件------------->
+          <classify-menu-box></classify-menu-box>
           </div>
         </div>
     </section>
@@ -50,6 +51,7 @@
     import GoodlistBox from "../components/compo/goodList/GoodlistBox";
     import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
     import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
+    import ClassifyMenuBox from "../components/compo/ClassifyMenuList/ClassifyMenuBox";
     import SwiperBox from "../components/compo/swiperlist/SwiperBox";
     import Leftcompon from "../components/compo/Leftlist/Leftcompon";
     import LeftBox from "../components/compo/Leftlist/LeftBox";
@@ -57,7 +59,7 @@
     import HeaderBox from "../components/compo/lc/headerBox";
     export default {
         name: "compo",
-      components: {HeaderBox,LeftBox,  Leftcompon,FooterBox,SwiperBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
+      components: {HeaderBox,LeftBox,ClassifyMenuBox,Leftcompon,FooterBox,SwiperBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度

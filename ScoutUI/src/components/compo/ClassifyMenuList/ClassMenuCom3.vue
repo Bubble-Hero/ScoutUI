@@ -1,10 +1,9 @@
 <template>
-  <!--组件单例模板-->
   <div class="con-section">
     <ul class="">
       <li>
-        <h1>登录组件</h1>
-        <p class="ullipLast">账号密码登录以及密码明文密文切换,如下面实例所示：</p>
+        <h1>分类菜单三</h1>
+        <p class="ullipLast">标题，图片以及文字横向排列的分类菜单，如下面实例所示：</p>
         <div class="case">
           <div class="code">
             <div class="code-header">
@@ -15,27 +14,10 @@
               </form>
             </div>
             <div class="code-body"  style="overflow: auto;">
-                    <textarea style="resize:none;" name="" id="" cols="30" rows="10"  readonly="readonly">
-                      <div>
-                        <header>
-                          <p>
-                            <router-link to="/me">
-                              <i class="iconfont" style="color: #88dad3;">&#xe66b;</i>
-                            </router-link>
-                          </p>
-                          <p>帮助</p>
-                        </header>
-                        <div class="section-tel">
-                          <div class="area">
-                            <p class="eightsix">+86</p>
-                            <i class="iconfont">&#xe63b;</i>
-                          </div>
-                            <div class="tel"><input id="t1" type="text"
-                                 placeholder="请输入手机号"/></div>
-                            </div>
-                          <router-view></router-view>
-                      </div>
-                    </textarea>
+              <textarea style="resize:none;" name="" id="" cols="30" rows="10"
+                        readonly="readonly">
+                
+              </textarea>
             </div>
           </div>
           <div class="result">
@@ -48,23 +30,20 @@
             </div>
             <div class="code-body right">
               <!--//....子组件....-->
-              <login-compon></login-compon>
-
+              <classify-menu3></classify-menu3>
             </div>
           </div>
         </div>
-
-
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-    import LoginCompon from "./loginCompon";
+    import ClassifyMenu3 from "./ClassifyMenu3";
     export default {
-        name: "LoginSubCom",
-      components: {LoginCompon}
+        name: "ClassMenuCom3",
+      components: {ClassifyMenu3}
     }
 </script>
 
