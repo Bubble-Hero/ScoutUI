@@ -15,6 +15,7 @@
 
           <!--模板盒子（向下添加自己的分类组件）--------------------------->
           <common-box></common-box>
+          <footer-box></footer-box>
           <!--模板盒子--------------------------->
 
 
@@ -37,9 +38,10 @@
     import IndexHeader from "../components/indexComponents/IndexHeader";
     import IntroSide from "../components/intro/introSide";
     import CommonBox from "../components/compo/commonBox";
+    import FooterBox from "../components/compo/lc/footerBox";
     export default {
         name: "compo",
-      components: {CommonBox, IntroSide, IndexHeader},
+      components: {FooterBox, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
