@@ -11,9 +11,9 @@
         <div class="section1">
             <div class="whyBox">
               <div class="whyBoxInner">
-                <h1>Why choose ScoutUI ?</h1>
-                <h1>Start</h1>
-                <h1>GITHUB</h1>
+                <h1 class="D-change">Why choose ScoutUI ?</h1>
+                <h1 class="D-change">Start</h1>
+                <h1 class="D-change">GITHUB</h1>
               </div>
               <div class="feature">
                   <div class="feature1" :key="m" v-for="(i,m) in featureData">
@@ -54,11 +54,37 @@
               }
             ]
           }
+      },
+      methods:{
+          changeColor(){
+            let colorArr=["rgb(100, 19, 133)","#17b6ad","#ff0","#2D0","#3FA","#705"]
+            //颜色随机
+            $(".D-change").hover(function () {
+              //放在里面。每移上一次，获取一次随机数
+              let round=parseInt(Math.random()*colorArr.length-1)
+              let Acolor=colorArr[round]
+              $(this).css({color:Acolor})
+                $(this).addClass("fff")
+              console.log(Acolor)
+            },function () {
+              $(this).css({color:"#fff"})
+              $(this).removeClass("fff")
+            })
+          }
+      },
+      mounted(){
+          this.changeColor()
+      },
+      updated(){
+        this.changeColor()
       }
     }
 </script>
 
 <style scoped>
+  .fff{
+   border-color:#fff!important;
+  }
   .indexSection{
     padding-top:65px;
   }
@@ -71,11 +97,12 @@
     width: 250px;
     height: 250px;
     margin-right: 40px;
+    cursor: pointer;
   }
   .logoBoxR h1{
     font-size:45px ;
     line-height:68px ;
-    color: #cccccc;
+    color: #fff;
   }
   .logoBoxR h2{
     font-size: 25px;
@@ -104,7 +131,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    align-items: center;
     width: 70%;
     margin: 0 auto;
     margin-bottom: 50px;
@@ -113,7 +139,7 @@
     /*width: 60%;*/
     padding:0 40px;
     text-align: center;
-    color: #cccccc;
+    color: #fff;
     font-size: 20px;
     line-height: 30px;
     border: 1px dashed #17b6ad;
@@ -121,6 +147,7 @@
     -moz-border-radius: 20px;
     border-radius: 20px;
     margin-right: 20px;
+    cursor: pointer;
   }
   .feature{
     display:flex;
