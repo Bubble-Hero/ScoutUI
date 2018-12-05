@@ -1,6 +1,6 @@
 <template>
     <div class="commonHeader">
-      <a href="#"><p class="webName">Scout<span style="color: #641385;">UI</span></p></a>
+      <router-link to="/index"><p class="webName">Scout<span style="color: #641385;">UI</span></p></router-link>
       <div class="commonHeaderR">
         <input type="text" placeholder="Search...">
         <router-link to="/"><div class="dropdown">
@@ -50,12 +50,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background:rgba(0,0,0,.08);
+  background:#dedddd;
 }
 .webName{
     font-size: 40px;
     line-height: 65px;
     color: #17b6ad;
+
 }
 .commonHeaderR{
   display: flex;
@@ -83,7 +84,7 @@ button{
 button:hover{
   background: transparent;
   border: 1px solid #cccccc;
-  color: #cccccc;
+  color: white;
 }
  .open > .dropdown-toggle.btn-default:hover {
   /*color: transparent;*/

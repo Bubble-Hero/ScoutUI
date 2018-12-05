@@ -15,11 +15,15 @@
 
           <!--模板盒子（向下添加自己的分类组件）--------------------------->
           <common-box></common-box>
+          <footer-box></footer-box>
+          <!--模板盒子--------------------------->
+          <goodlist-box></goodlist-box>
           <!-------------登录注册组件---------------->
           <login-sub-box></login-sub-box>
-
-
-
+          <!-------------嵌套循环轮播--------->
+          <swiper-box></swiper-box>
+          <!------------响应后台左侧边栏----------->
+          <left-box></left-box>
           <div class="page-component-up-box">
             <div class="page-component-up">
               <i class="glyphicon glyphicon-triangle-top"></i>
@@ -38,11 +42,12 @@
     import IndexHeader from "../components/indexComponents/IndexHeader";
     import IntroSide from "../components/intro/introSide";
     import CommonBox from "../components/compo/commonBox";
+    import GoodlistBox from "../components/compo/goodList/GoodlistBox";
     import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
     import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
     export default {
         name: "compo",
-      components: {LoginSubBox, LoginCompon, CommonBox, IntroSide, IndexHeader},
+      components: {LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度

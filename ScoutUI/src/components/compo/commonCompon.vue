@@ -68,7 +68,7 @@
     width: 100%;
     line-height: 40px;
     font-size: 22px;
-    background: #fff;
+    /*background: #fff;*/
     margin: 20px 0 10px;
   }
   ul li p{
