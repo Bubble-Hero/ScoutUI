@@ -15,6 +15,7 @@
 
           <!--模板盒子（向下添加自己的分类组件）--------------------------->
           <common-box></common-box>
+          <header-box></header-box>
           <footer-box></footer-box>
           <!--商品列表组件--------------------------->
           <goodlist-box></goodlist-box>
@@ -32,6 +33,7 @@
               <i class="glyphicon glyphicon-triangle-top"></i>
             </div>
           </div>
+
           </div>
         </div>
     </section>
@@ -48,10 +50,11 @@
     import GoodlistBox from "../components/compo/goodList/GoodlistBox";
     import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
     import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
-    import SlideUpBox from "../components/compo/slideUp/SlideUpBox";
+    import FooterBox from "../components/compo/lc/footerBox";
+    import HeaderBox from "../components/compo/lc/headerBox";
     export default {
         name: "compo",
-      components: {SlideUpBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
+      components: {HeaderBox, FooterBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
@@ -78,6 +81,7 @@
   .compo{
     display: flex;
     flex-direction: column;
+    margin-left: 28rem;
   }
   section{
     display: flex;

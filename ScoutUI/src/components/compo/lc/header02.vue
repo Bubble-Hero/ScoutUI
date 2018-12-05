@@ -3,8 +3,8 @@
   <div class="con-section">
     <ul class="">
       <li>
-        <h1>底部组件2</h1>
-        <p>为页面和功能提供底部的菜单列表，用于 WebApp 底部，起到页面切换的效果。组件一为底部提供四个菜单(图标和文字)。</p>
+        <h1>顶部组件2</h1>
+        <p>为页面和功能提供头部的菜单列表，用于 WebApp 顶部，起到标题、返回、其部分小的效果。组件一为美团发现顶部。</p>
         <p class="ullipLast">如下面实例所示：</p>
         <div class="case">
           <div class="code">
@@ -19,58 +19,44 @@
               <!--.....源代码。。。。。 -->
               <textarea style="resize:none;" name="" id="" cols="30" rows="10"  readonly="readonly">
 <template>
-  <div class="navigation">
-    <router-link class="nav" to="/index"><i class="navIcon iconfont">&#xe604;</i>首页</router-link>
-    <router-link class="nav" to='/near'><i class="navIcon iconfont">&#xe645;</i>附近</router-link>
-    <router-link class="nav" to='/order'><i class="navIcon iconfont">&#xe6cf;</i>订单</router-link>
-    <router-link class="nav" to='/me'><i class="navIcon iconfont">&#xe8da;</i>我的</router-link>
-  </div>
+  <header>
+    <router-link to="/find"><i class="iconfont headeri">&#xe63c;</i></router-link>
+    <span>美团头条</span>
+    <p><i class="iconfont headeri" @click="goTop">&#xe6d4;</i></p>
+  </header>
 </template>
 
 <script>
     export default {
-      name: "footer02-lc"
+      name: "header02-lc"
     }
 </script>
 
 <style scoped>
-  .navigation{
-    margin-top: 100px;
-    padding: 8px;
-    display:flex;/*设置五个导航条的内容由列排列变为行排列*/
-    height: 8vh;
-    font-size: 1rem;
-    background-color: #fff;
-    position: relative;
-    z-index: 1000;
-    border: 1px solid #eee;
+  header{
+    width: 100%;
+    line-height: 5rem;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f9f9f9;
+    border-bottom: 1px solid #bdbdbd;
+    z-index: 2;
+    padding: 0 1.2rem;
   }
-  .nav{
-    display: flex;/*这个和下面的 flex-direction属性设置将图片与文字平行排布*/
-    flex-direction: column;
-    flex: 1;/*设置五个导航条的内容等分*/
-    line-height: 1.5rem;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: .9em;
-    color:#28c0ac;
-  }
-  .navIcon{
-    margin:0 auto;
+  .headeri{
     font-size: 2.4rem;
-    color:#28c0ac;
+    color: #292929;
+    height: 100%;
+    line-height: 5rem;
   }
-  .router-link-active .navIcon{
-    font-size: 2.5rem;
-    color:#28c0ac;
+  header span{
+    color: black;
+    font-size: 1.6rem;
   }
-  .router-link-active{
-    margin-top: .8em;
-    color:#28c0ac;
-    font-size: 1.1rem;
-  }
-</style>
 
+</style>
 
               </textarea>
             </div>
@@ -84,8 +70,7 @@
               </form>
             </div>
             <div class="code-body">
-              <!--//....子组件....-->
-              <footer02-lc></footer02-lc>
+              <header02-lc></header02-lc>
 
             </div>
           </div>
@@ -98,10 +83,10 @@
 </template>
 
 <script>
-    import Footer02Lc from "./lc-elements/footer02-lc";
+    import Header02Lc from "./lc-elements/header02-lc";
     export default {
-        name: "footer02",
-      components: {Footer02Lc}
+        name: "header02",
+      components: {Header02Lc}
     }
 </script>
 
