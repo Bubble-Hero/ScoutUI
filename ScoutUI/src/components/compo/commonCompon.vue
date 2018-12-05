@@ -36,7 +36,7 @@
             </div>
             <div class="code-body">
               <!--//....子组件....-->
-                <intro-side></intro-side>
+                
 
             </div>
           </div>
