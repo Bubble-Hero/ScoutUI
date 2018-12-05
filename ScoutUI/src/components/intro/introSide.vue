@@ -71,7 +71,7 @@ ul{
   margin-bottom: 30px;
 }
   .side{
-      width: 290px;
+      width: 270px;
       background: rgba(0, 0, 0, 0.02);
       padding: 83px 0 40px;
       border: 1px solid lightgray;

@@ -26,6 +26,7 @@
 .intro{
   display: flex;
   flex-direction: column;
+  margin-left: 28rem;
 }
 section{
   display: flex;

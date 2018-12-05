@@ -3,8 +3,8 @@
   <div class="con-section">
     <ul class="">
       <li>
-        <h1>底部组件2</h1>
-        <p>为页面和功能提供底部的菜单列表，用于 WebApp 底部，起到页面切换的效果。组件一为底部提供四个菜单(图标和文字)。</p>
+        <h1>顶部组件1</h1>
+        <p>为页面和功能提供头部的菜单列表，用于 WebApp 顶部，起到标题、返回、其部分小的效果。组件一为美团首页顶部。</p>
         <p class="ullipLast">如下面实例所示：</p>
         <div class="case">
           <div class="code">
@@ -19,56 +19,117 @@
               <!--.....源代码。。。。。 -->
               <textarea style="resize:none;" name="" id="" cols="30" rows="10"  readonly="readonly">
 <template>
-  <div class="navigation">
-    <router-link class="nav" to="/index"><i class="navIcon iconfont">&#xe604;</i>首页</router-link>
-    <router-link class="nav" to='/near'><i class="navIcon iconfont">&#xe645;</i>附近</router-link>
-    <router-link class="nav" to='/order'><i class="navIcon iconfont">&#xe6cf;</i>订单</router-link>
-    <router-link class="nav" to='/me'><i class="navIcon iconfont">&#xe8da;</i>我的</router-link>
+  <div class="nav-box">
+    <a href="javascript:void(0)">
+      <div>西安
+        <i class="iconfont">&#xe615;</i>
+      </div>
+      <span>多云5℃</span>
+    </a>
+    <div class="input-box">
+      <div class="lr-box search-box">
+        <i class="iconfont">&#xe637;</i>
+      </div>
+      <input type="text" placeholder="(热门电影)"/>
+      <!--<div class="lr-box dingdong-box">-->
+      <!--</div>-->
+    </div>
+    <a href="javascript:void(0)">
+      <i class="iconfont">&#xe650;</i>
+    </a>
   </div>
 </template>
 
 <script>
     export default {
-      name: "footer02-lc"
+      name: "header01-lc"
     }
 </script>
 
-<style scoped>
-  .navigation{
-    margin-top: 100px;
-    padding: 8px;
-    display:flex;/*设置五个导航条的内容由列排列变为行排列*/
-    height: 8vh;
-    font-size: 1rem;
+<style lang="scss">
+
+  $wt:#fff;
+  .nav-box {
+    margin-top: 40px;
     background-color: #fff;
-    position: relative;
-    z-index: 1000;
-    border: 1px solid #eee;
+    padding: 1rem;
+    display: flex;
+    z-index: 333;
+    width: 100%;
+    border-bottom: .08rem solid #eee;
+    a {
+      display: flex;
+      flex-direction: column;
+      width: 3.8rem;
+      height: 3.8rem;
+      // background-color: rgba(0, 0, 0, 0.3);
+      // color: $wt;
+      border-radius: 50%;
+      line-height: 1rem;
+      i{
+        color: #111;
+      }
+    }
+    a:first-child{
+      justify-content: space-between;padding: .4rem 0;
+      div{
+        color:#111;font-size: 1.3rem;white-space: nowrap;font-weight: bolder;
+        i{
+          font-size: 1.3rem;font-weight: bolder;
+        }
+      }
+      span{
+        color: #666;font-size: .85rem;
+      }
+    }
+    a:last-child {
+      margin-left: auto !important;
+      i{
+        font-size: 2.5rem;
+        margin:auto;
+      }
+    }
+    .input-box {
+      flex: 1;
+      margin: 0 1.1rem;
+      position: relative;
+      display: flex;justify-content: center;
+      input {
+        background-color:#eee;
+        border-radius:1rem;
+        border: 0;
+        padding: .5rem 3.5rem;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+      }
+      .lr-box {
+        position: absolute;
+        min-width: 3.5rem;
+        height: 100%;
+        display: flex;
+        top: 0;
+      }
+      .search-box {
+        left: 10%;
+        i {
+          font-size: 1.9rem;
+          color: #9b9b9b;
+          margin: auto;
+          font-weight: 600;
+        }
+      }
+      .dingdong-box {
+        right: 0;
+        img {
+          width: 1.9rem;
+          height: 2.1rem;
+          margin: auto;
+        }
+      }
+    }
   }
-  .nav{
-    display: flex;/*这个和下面的 flex-direction属性设置将图片与文字平行排布*/
-    flex-direction: column;
-    flex: 1;/*设置五个导航条的内容等分*/
-    line-height: 1.5rem;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: .9em;
-    color:#28c0ac;
-  }
-  .navIcon{
-    margin:0 auto;
-    font-size: 2.4rem;
-    color:#28c0ac;
-  }
-  .router-link-active .navIcon{
-    font-size: 2.5rem;
-    color:#28c0ac;
-  }
-  .router-link-active{
-    margin-top: .8em;
-    color:#28c0ac;
-    font-size: 1.1rem;
-  }
+
 </style>
 
 
@@ -85,7 +146,7 @@
             </div>
             <div class="code-body">
               <!--//....子组件....-->
-              <footer02-lc></footer02-lc>
+              <header01-lc></header01-lc>
 
             </div>
           </div>
@@ -98,10 +159,10 @@
 </template>
 
 <script>
-    import Footer02Lc from "./lc-elements/footer02-lc";
+    import Header01Lc from "./lc-elements/header01-lc";
     export default {
-        name: "footer02",
-      components: {Footer02Lc}
+        name: "header01",
+      components: {Header01Lc}
     }
 </script>
 
