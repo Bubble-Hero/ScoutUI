@@ -50,7 +50,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background:rgba(0,0,0,.08);
+  background:#dedddd;
 }
 .webName{
     font-size: 40px;
@@ -84,7 +84,7 @@ button{
 button:hover{
   background: transparent;
   border: 1px solid #cccccc;
-  color: #cccccc;
+  color: white;
 }
  .open > .dropdown-toggle.btn-default:hover {
   /*color: transparent;*/

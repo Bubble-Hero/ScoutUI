@@ -9,6 +9,7 @@ import "jquery"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap/dist/js/bootstrap"
 import "./assets/css/base.css"
+import Swiper from 'swiper'
 
 Vue.config.productionTip = false
 
