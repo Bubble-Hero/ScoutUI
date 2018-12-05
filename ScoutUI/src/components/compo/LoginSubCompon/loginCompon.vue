@@ -1,5 +1,13 @@
 <template>
   <div>
+    <header>
+      <p>
+        <router-link to="/me">
+          <i class="iconfont" style="color: #88dad3;">&#xe66b;</i>
+        </router-link>
+      </p>
+      <p>帮助</p>
+    </header>
     <div class="section-tel">
       <div class="area">
         <p class="eightsix">+86</p>
