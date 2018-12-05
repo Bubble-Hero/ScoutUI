@@ -15,9 +15,10 @@
 
           <!--模板盒子（向下添加自己的分类组件）--------------------------->
           <common-box></common-box>
+          <footer-box></footer-box>
+          <!--模板盒子--------------------------->
           <!-------------登录注册组件---------------->
           <login-sub-box></login-sub-box>
-
           <!-------------嵌套循环轮播--------->
           <swiper-box></swiper-box>
           <!------------响应后台左侧边栏----------->
@@ -41,6 +42,7 @@
     import IndexHeader from "../components/indexComponents/IndexHeader";
     import IntroSide from "../components/intro/introSide";
     import CommonBox from "../components/compo/commonBox";
+
     import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
     import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
     export default {
