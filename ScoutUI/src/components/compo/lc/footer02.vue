@@ -3,7 +3,7 @@
   <div class="con-section">
     <ul class="">
       <li>
-        <h1>底部组件1</h1>
+        <h1>底部组件2</h1>
         <p>为页面和功能提供底部的菜单列表，用于 WebApp 底部，起到页面切换的效果。组件一为底部提供四个菜单(图标和文字)。</p>
         <p class="ullipLast">如下面实例所示：</p>
         <div class="case">

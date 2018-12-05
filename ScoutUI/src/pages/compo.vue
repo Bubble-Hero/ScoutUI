@@ -14,8 +14,10 @@
           <!--------------组件1------------>
 
           <!--模板盒子（向下添加自己的分类组件）--------------------------->
+          <common-box></common-box>
+          <header-box></header-box>
           <footer-box></footer-box>
-          <!--模板盒子--------------------------->
+          <!--商品列表组件--------------------------->
           <goodlist-box></goodlist-box>
           <!-------------登录注册组件---------------->
           <login-sub-box></login-sub-box>
@@ -23,6 +25,9 @@
           <swiper-box></swiper-box>
           <!------------响应后台左侧边栏----------->
           <left-box></left-box>
+          <!--上拉菜单组件--------------------------->
+          <slide-up-box></slide-up-box>
+
           <div class="page-component-up-box">
             <div class="page-component-up">
               <i class="glyphicon glyphicon-triangle-top"></i>
@@ -47,9 +52,14 @@
     import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
     import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
     import ClassifyMenuBox from "../components/compo/ClassifyMenuList/ClassifyMenuBox";
+    import SwiperBox from "../components/compo/swiperlist/SwiperBox";
+    import Leftcompon from "../components/compo/Leftlist/Leftcompon";
+    import LeftBox from "../components/compo/Leftlist/LeftBox";
+    import FooterBox from "../components/compo/lc/footerBox";
+    import HeaderBox from "../components/compo/lc/headerBox";
     export default {
         name: "compo",
-      components: {ClassifyMenuBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
+      components: {HeaderBox,LeftBox,ClassifyMenuBox,Leftcompon,FooterBox,SwiperBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
@@ -76,6 +86,7 @@
   .compo{
     display: flex;
     flex-direction: column;
+    margin-left: 28rem;
   }
   section{
     display: flex;
