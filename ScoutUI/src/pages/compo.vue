@@ -15,7 +15,8 @@
 
           <!--模板盒子（向下添加自己的分类组件）--------------------------->
           <common-box></common-box>
-          <!--模板盒子--------------------------->
+          <!-------------登录注册组件---------------->
+          <login-sub-box></login-sub-box>
 
 
 
@@ -37,9 +38,11 @@
     import IndexHeader from "../components/indexComponents/IndexHeader";
     import IntroSide from "../components/intro/introSide";
     import CommonBox from "../components/compo/commonBox";
+    import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
+    import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
     export default {
         name: "compo",
-      components: {CommonBox, IntroSide, IndexHeader},
+      components: {LoginSubBox, LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度

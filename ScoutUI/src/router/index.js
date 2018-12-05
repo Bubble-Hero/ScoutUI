@@ -5,6 +5,9 @@ import intro from "@/pages/intro"
 import compo from "@/pages/compo"
 import team from "@/pages/team"
 
+import logincompon from "@/components/compo/LoginSubCompon/loginCompon"
+import logincomcon1 from "@/components/compo/LoginSubCompon/loginComponCon1"
+import logincomcon2 from "@/components/compo/LoginSubCompon/loginComCon2"
 Vue.use(Router)
 
 export default new Router({
@@ -19,7 +22,17 @@ export default new Router({
     },
     {
       path: '/compo',
-      component: compo
+      component: compo,
+      children: [
+        {
+          path: 'logincompon', name: 'loginCompon', component: logincompon,
+          children: [
+            {path: '', redirect: 'logincomcon1'},
+            {path: 'logincomcon1', name: 'loginComponCon1', component: logincomcon1},
+            {path: 'logincomcon2', name: 'loginComCon2', component: logincomcon2},
+          ]
+        },
+      ]
     },
     {
       path: '/team',
