@@ -14,7 +14,6 @@
           <!--------------组件1------------>
 
           <!--模板盒子（向下添加自己的分类组件）--------------------------->
-          <common-box></common-box>
           <footer-box></footer-box>
           <!--模板盒子--------------------------->
           <goodlist-box></goodlist-box>
@@ -29,6 +28,8 @@
               <i class="glyphicon glyphicon-triangle-top"></i>
             </div>
           </div>
+          <!--------------分类菜单组件------------->
+          <classify-menu-box></classify-menu-box>
           </div>
         </div>
     </section>
@@ -45,9 +46,10 @@
     import GoodlistBox from "../components/compo/goodList/GoodlistBox";
     import LoginCompon from "../components/compo/LoginSubCompon/loginCompon";
     import LoginSubBox from "../components/compo/LoginSubCompon/LoginSubBox";
+    import ClassifyMenuBox from "../components/compo/ClassifyMenuList/ClassifyMenuBox";
     export default {
         name: "compo",
-      components: {LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
+      components: {ClassifyMenuBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
