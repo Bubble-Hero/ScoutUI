@@ -17,7 +17,62 @@
             <div class="code-body"  style="overflow: auto;">
                     <textarea style="resize:none;" name="" id="" cols="30" rows="10"  readonly="readonly">
 
-
+                      <div class="swiper-wrapper buf3" style="height: 100%;">
+            <div class="swiper-slide">
+              <ul class="life-ul">
+                <li>
+                  <router-link to="">
+                  <div class="left-picture">
+                    <img src="" alt="">
+                  </div>
+                  <div class="right-other">
+                    <div class="other-top">
+                      <p></p>
+                      <span></span>
+                    </div>
+                    <div class="other-cen">
+                      <img src="" alt="">
+                      <span></span>
+                      <span></span>
+                    </div>
+                    <div class="sale"></div>
+                    <div class="last">
+                      <img src="" alt="">
+                      <p></p>
+                    </div>
+                  </div>
+                  </router-link>
+                  </li>
+              </ul>
+            </div>
+            <div class="swiper-slide">
+              <ul class="life-ul">
+                <li>
+                  <router-link to="">
+                    <div class="left-picture">
+                      <img src="" alt="">
+                    </div>
+                    <div class="right-other">
+                      <div class="other-top">
+                        <p></p>
+                        <span></span>
+                      </div>
+                      <div class="other-cen">
+                        <img src="" alt="">
+                        <span></span>
+                        <span></span>
+                      </div>
+                      <div class="sale"></div>
+                      <div class="last">
+                        <img src="" alt="">
+                        <p></p>
+                      </div>
+                    </div>
+                  </router-link>
+                </li>
+              </ul>
+            </div>
+          </div>
                     </textarea>
             </div>
           </div>

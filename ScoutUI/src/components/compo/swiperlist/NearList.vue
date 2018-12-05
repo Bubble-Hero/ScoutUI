@@ -343,7 +343,8 @@
     display:none;
   }
   .secondNav{
-    flex:1;text-align: center;
+    flex:1;
+    text-align: center;
   }
   .secondNav:last-child{
     margin-right: 2rem;
@@ -438,9 +439,9 @@
     padding-left: .7rem;
   }
   .nearnav-li .life-ul li a .right-other .sale{
-    width: 4.6rem;
+    width: 5.6rem;
     text-align: center;
-    line-height: 1.3rem;
+    line-height: 2.3rem;
     border: 1px solid #ffad70;
     color: #f75b0e;
     margin-top: .4rem;

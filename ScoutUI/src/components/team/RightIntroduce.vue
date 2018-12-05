@@ -2,18 +2,22 @@
   <div class="team">
     <intro-side></intro-side>
     <div class="introduce r">
-      <div class="logo">
-        <a href="">
-          <img src="../../../static/img/LOGO.png" alt="">
-        </a>
+
+      <div class="posi">
+        <div class="logo">
+          <a href="">
+            <img src="../../../static/img/LOGO.png" alt="">
+          </a>
+        </div>
+        <div class="git">
+          <a href="">
+            <i class="iconfont">&#xe648;</i>
+            <input type="button" value="GitHub">
+          </a>
+        </div>
+        <p class="firstp">我们的团队</p>
       </div>
-      <div class="git">
-        <a href="">
-          <i class="iconfont">&#xe648;</i>
-          <input type="button" value="GitHub">
-        </a>
-      </div>
-      <p class="firstp">我们的团队</p>
+
       <p class="we">我们是一个思维活跃、讲求协同创新的技术型团队，承担着公司商业与项目的核心研发任务，是项目建设的核心基础，我们的工作涉及大量的与各部门、各单位的沟通协调，所以，我们要求团队成员不仅需要过硬的专业水平，还必须爱岗敬业，严格遵循职业操守。</p>
       <div class="people">
         <div class="one">
@@ -328,40 +332,42 @@
     padding: 0 3rem;
     padding-bottom: 15rem;
     height: 100%;
-    position: relative;
-    .logo{
-      width: 7rem;
-      height: 7rem;
-      position: absolute;
-      left: 39rem;
-      top: 4rem;
-      img{
+    .posi{
+      position: relative;
+      .logo{
         width: 7rem;
         height: 7rem;
-      }
-    }
-    .git{
-      position: absolute;
-      right: 14rem;
-      top: 6.5rem;
-      a{
-        display: block;
-        background: #17b6ad;
-        color: #fff;
-        line-height: 2.5rem;
-        width: 8rem;
-        text-align: center;
-        input{
-          border: 0;
-          background: #17b6ad;;
+        position: absolute;
+        left: 22rem;
+        top: 4rem;
+        img{
+          width: 7rem;
+          height: 7rem;
         }
       }
-    }
-    .firstp{
-      font-size: 2.6rem;
-      font-weight: bolder;
-      line-height: 14rem;
-      text-align: center;
+      .git{
+        position: absolute;
+        right: 14rem;
+        top: 6.5rem;
+        a{
+          display: block;
+          background: #17b6ad;
+          color: #fff;
+          line-height: 2.5rem;
+          width: 8rem;
+          text-align: center;
+          input{
+            border: 0;
+            background: #17b6ad;;
+          }
+        }
+      }
+      .firstp{
+        font-size: 2.6rem;
+        font-weight: bolder;
+        line-height: 14rem;
+        text-align: center;
+      }
     }
     .we{
       margin: 0 auto;

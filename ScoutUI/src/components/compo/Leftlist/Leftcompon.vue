@@ -16,8 +16,30 @@
             </div>
             <div class="code-body"  style="overflow: auto;">
                     <textarea style="resize:none;" name="" id="" cols="30" rows="10"  readonly="readonly">
-                      nhngjtgyfgvfdfg
-
+                        <ul class="one">
+      <li class="first">
+        <div data-toggle="collapse" data-target="#demo1">
+          <span>ORDERS SUMMARY</span>
+          <i class="glyphicon glyphicon-menu-down"></i>
+        </div>
+        <div id="demo1" class="collapse">
+          <div class="chart1">
+              <p>THIS WEEK SALES</p>
+              <p>THIS WEEK BALANCE</p>
+          </div>
+        </div>
+      </li>
+      <li class="first">
+        <div data-toggle="collapse" data-target="#demo2">
+          <span>GENERAL SETTINGS</span>
+          <i class="glyphicon glyphicon-menu-down"></i>
+        </div>
+        <div id="demo2" class="collapse">
+          <p>switch ON</p>
+          <p>switch OFF</p>
+        </div>
+      </li>
+    </ul>
                     </textarea>
             </div>
           </div>

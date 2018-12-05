@@ -1,5 +1,10 @@
 <template>
   <div class="all" style="background: #fff;max-height: 92vh;">
+    <!---------------header-------------->
+    <header>
+
+    </header>
+
     <!----------------main---------------->
     <main v-for="(is,ts) in nearlist">
       <near-nav :nav1="is.nav"></near-nav>
@@ -1354,6 +1359,15 @@
 </script>
 
 <style lang="scss" scoped>
+  .all{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  header{
+    width: 100%;
+    height: 2rem;
+  }
   main{
     flex: 1;
     overflow: auto;
