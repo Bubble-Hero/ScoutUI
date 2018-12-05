@@ -30,7 +30,7 @@
 
   $wt:#fff;
   .nav-box {
-    margin-top: 40px;
+   // margin-top: 40px;
     background-color: #fff;
     padding: 1rem;
     display: flex;

@@ -4,6 +4,7 @@
     <main>
       <right-introduce></right-introduce>
     </main>
+    <copyright-two></copyright-two>
   </div>
 </template>
 
@@ -11,9 +12,10 @@
     import Font from "../../static/font/iconfont.css"
     import RightIntroduce from "../components/team/RightIntroduce";
     import IndexHeader from "../components/indexComponents/IndexHeader";
+    import CopyrightTwo from "../components/footer-copyright/copyright-two";
     export default {
         name: "team",
-      components: {IndexHeader, RightIntroduce}
+      components: {CopyrightTwo, IndexHeader, RightIntroduce}
     }
 </script>
 
@@ -23,5 +25,8 @@
     /*background: red;*/
     overflow: hidden;
     margin-top: 65px;
+  }
+  .team{
+    background-color: #fff;
   }
 </style>

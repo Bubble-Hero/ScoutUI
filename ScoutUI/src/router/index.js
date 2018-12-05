@@ -4,6 +4,7 @@ import index from "@/pages/index"
 import intro from "@/pages/intro"
 import compo from "@/pages/compo"
 import team from "@/pages/team"
+import example from "@/pages/Example"
 
 import logincompon from "@/components/compo/LoginSubCompon/loginCompon"
 import logincomcon1 from "@/components/compo/LoginSubCompon/loginComponCon1"
@@ -37,6 +38,10 @@ export default new Router({
     {
       path: '/team',
       component: team
+    },
+    {
+      path: '/example',
+      component: example
     }
   ]
 })

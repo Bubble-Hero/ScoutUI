@@ -3,42 +3,47 @@
       <router-link to="/index"><p class="webName">Scout<span style="color: #641385;">UI</span></p></router-link>
       <div class="commonHeaderR">
         <input type="text" placeholder="Search...">
-        <router-link to="/"><div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <router-link to="/index" class="empt"><div class="dropdown">
+          <div class="nav">
             首页
-          </button>
+          </div>
         </div></router-link>
-        <router-link to="/intro"><div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+        <router-link to="/intro">
+          <div class="nav">
              指南
-          </button>
-        </div></router-link>
-        <router-link to="/compo"><div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          </div>
+         </router-link>
+        <router-link to="/compo/logincomcon1">
+          <div class="nav">
             组件
-          </button>
-        </div></router-link>
-        <router-link to="/team"><div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          </div>
+        </router-link>
+        <router-link to="/team">
+          <div class="nav">
             团队
-          </button>
-        </div></router-link>
-        <router-link to="/"><div class="dropdown">
-          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          </div>
+        </router-link>
+        <router-link to="/example">
+          <div class="nav">
             客户案例
-          </button>
-        </div></router-link>
+          </div>
+       </router-link>
       </div>
     </div>
 </template>
 
 <script>
     export default {
-        name: "IndexHeader"
+        name: "IndexHeader",
+      methods:{
+      }
     }
 </script>
 
 <style scoped>
+  .empt{
+    background: transparent!important;
+  }
 .commonHeader{
   z-index: 100;
   position:fixed;
@@ -50,7 +55,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background:#dedddd;
+  background:#eee;
 }
 .webName{
     font-size: 40px;
@@ -76,27 +81,22 @@
   font-size: 20px;
   margin-right: 10px;
 }
-button{
+.nav{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  width: 6rem;
   background: transparent;
   border: 1px solid #17b6ad;
   color: #17b6ad;
+  height: 3.5rem;
+  margin-right: 1rem;
+  border-radius: 1rem;
 }
-button:hover{
+.nav:hover{
   background: transparent;
   border: 1px solid #cccccc;
   color: white;
 }
- .open > .dropdown-toggle.btn-default:hover {
-  /*color: transparent;*/
-  background-color: transparent;
-  border-color: transparent;
-}
 
-.dropdown{
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-    margin:0 10px;
-  background: transparent;
-  }
 </style>

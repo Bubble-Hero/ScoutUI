@@ -12,8 +12,12 @@
             <div class="whyBox">
               <div class="whyBoxInner">
                 <h1 class="D-change">Why choose ScoutUI ?</h1>
-                <h1 class="D-change">Start</h1>
-                <h1 class="D-change">GITHUB</h1>
+                <router-link to="/intro">
+                  <h1 class="D-change">Start</h1>
+                </router-link>
+                <a href="https://github.com/Bubble-Hero" target="_blank">
+                  <h1 class="D-change">GITHUB</h1>
+                </a>
               </div>
               <div class="feature">
                   <div class="feature1" :key="m" v-for="(i,m) in featureData">
@@ -123,7 +127,7 @@
   }
   .whyBoxInner {
     height: 60px;
-    background: rgba(0, 0, 0, .6);
+    background: rgba(0, 0, 0, .2);
     padding: 0 30px;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -143,11 +147,15 @@
     font-size: 20px;
     line-height: 30px;
     border: 1px dashed #17b6ad;
+    transition: border-radius .6s;
+    margin-right: 20px;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .whyBoxInner h1:hover{
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
     border-radius: 20px;
-    margin-right: 20px;
-    cursor: pointer;
   }
   .feature{
     display:flex;

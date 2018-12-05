@@ -61,8 +61,9 @@
   .guide{
     padding: 50px;
     width: 100%;
-    margin-top:10px ;
-    margin-bottom: 30px;
+    padding-top:10px ;
+    padding-bottom: 30px;
+    background-color: #fff;
   }
   .guide h2{
     font-size: 32px;

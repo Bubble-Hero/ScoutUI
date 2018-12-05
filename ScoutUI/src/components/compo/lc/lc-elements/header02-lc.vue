@@ -12,11 +12,11 @@
     }
 </script>
 
-<style scoped>
+<style lang="scss" scoped>
   header{
     width: 100%;
     line-height: 5rem;
-    margin-top: 40px;
+    //margin-top: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
