@@ -15,7 +15,10 @@
     import IndexHeader from "../components/indexComponents/IndexHeader";
     export default {
         name: "intro",
-      components: {IndexHeader, IntroCont, IntroSide}
+      components: {IndexHeader, IntroCont, IntroSide},
+      mounted(){
+
+      }
     }
 </script>
 

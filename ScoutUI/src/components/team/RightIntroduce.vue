@@ -18,9 +18,9 @@
       <div class="people">
         <div class="one">
           <div class="pic">
-            <img src="../../../static/img/n-t-1.png" alt="">
+            <img src="../../../static/img/bb1.jpg" alt="">
             <div class="show">
-              <img src="../../../static/img/n-t-1.png" alt="">
+              <img src="../../../static/img/bb1.jpg" alt="">
               <div class="shp">
                 <p>Kevin</p>
                 <p>Project manager</p>
@@ -397,6 +397,7 @@
             width: 5.5rem;
             height: 5.5rem;
             border-radius: 50%;
+            cursor: pointer;
           }
         }
         ul{

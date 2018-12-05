@@ -18,7 +18,10 @@
           <!-------------登录注册组件---------------->
           <login-sub-box></login-sub-box>
 
-
+          <!-------------嵌套循环轮播--------->
+          <swiper-box></swiper-box>
+          <!------------响应后台左侧边栏----------->
+          <left-box></left-box>
 
           <div class="page-component-up-box">
             <div class="page-component-up">
