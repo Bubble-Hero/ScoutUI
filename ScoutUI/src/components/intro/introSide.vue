@@ -19,12 +19,14 @@
       <li>功能三</li>
       <li>功能四</li>
     </ul>
-    <span class="liTitle">关于我们     ></span>
+    <span class="liTitle">团队     ></span>
     <ul class="slideUL">
-      <li>功能一</li>
-      <li>功能二</li>
-      <li>功能三</li>
-      <li>功能四</li>
+      <li>团队介绍</li>
+      <li>团队成员</li>
+    </ul>
+    <span class="liTitle">客户案例     ></span>
+    <ul class="slideUL">
+
     </ul>
   </div>
 
@@ -65,21 +67,43 @@ ul{
   background:rgba(23,173,182,.4);color:white;
 }
 .slideUL{
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .s-m-b{
   margin-bottom: 30px;
 }
   .side{
       width: 270px;
-      background: rgba(0, 0, 0, 0.02);
+      background: rgba(226,226,226,.5);
       padding: 83px 0 40px;
       border: 1px solid lightgray;
       position: fixed;
       left: 0;
       top: 0;
       height: 100%;
+      overflow-y: scroll;
   }
+
+::-webkit-scrollbar {
+  width: 14px;
+  background:linear-gradient(to right,#17b6ad 50%,#641385) ;
+}
+
+
+/*!*定义滚动条轨道 内阴影+圆角*!*/
+/*::-webkit-scrollbar-track*/
+/*{*/
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+  /*border-radius: 10px;*/
+  /*background-color: #F5F5F5;*/
+/*}*/
+
+/*!*定义滑块 内阴影+圆角*!*/
+/*::-webkit-scrollbar-thumb {*/
+  /*border-radius: 10px;*/
+  /*-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);*/
+  /*background-color: #555;*/
+/*}*/
   .logo{
     display: flex;
     padding-left: 30px;

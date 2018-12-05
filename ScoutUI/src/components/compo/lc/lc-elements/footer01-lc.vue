@@ -24,7 +24,7 @@
     font-size: 1rem;
     background-color: #fff;
     position: relative;
-    z-index: 1000;
+    z-index: 10;
     border: 1px solid #eee;
   }
   .nav{
