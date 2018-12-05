@@ -17,7 +17,7 @@
           <common-box></common-box>
           <!--模板盒子--------------------------->
 
-
+          <goodlist-box></goodlist-box>
 
           <div class="page-component-up-box">
             <div class="page-component-up">
@@ -37,9 +37,10 @@
     import IndexHeader from "../components/indexComponents/IndexHeader";
     import IntroSide from "../components/intro/introSide";
     import CommonBox from "../components/compo/commonBox";
+    import GoodlistBox from "../components/compo/goodList/GoodlistBox";
     export default {
         name: "compo",
-      components: {CommonBox, IntroSide, IndexHeader},
+      components: {GoodlistBox, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
