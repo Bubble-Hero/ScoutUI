@@ -1,5 +1,5 @@
 <template>
-
+<div>
   <div class="compo">
     <index-header></index-header>
     <section>
@@ -35,12 +35,12 @@
           </div>
           <!--------------分类菜单组件------------->
           <classify-menu-box></classify-menu-box>
-          </div>
         </div>
+      </div>
     </section>
   </div>
-
-
+  <copyright-two></copyright-two>
+</div>
 </template>
 
 <script>
@@ -57,9 +57,12 @@
     import LeftBox from "../components/compo/Leftlist/LeftBox";
     import FooterBox from "../components/compo/lc/footerBox";
     import HeaderBox from "../components/compo/lc/headerBox";
+    import CopyrightTwo from "../components/footer-copyright/copyright-two";
     export default {
         name: "compo",
-      components: {HeaderBox,LeftBox,ClassifyMenuBox,Leftcompon,FooterBox,SwiperBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
+      components: {
+        CopyrightTwo,
+        HeaderBox,LeftBox,ClassifyMenuBox,Leftcompon,FooterBox,SwiperBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
@@ -86,7 +89,8 @@
   .compo{
     display: flex;
     flex-direction: column;
-    margin-left: 28rem;
+    padding-left: 28rem;
+    background-color: #fff;
   }
   section{
     display: flex;
@@ -95,6 +99,7 @@
   .row{
     width: 100%;
     padding: 50px;
+    background-color: #fff;
   }
   .com{
     width: 100%;

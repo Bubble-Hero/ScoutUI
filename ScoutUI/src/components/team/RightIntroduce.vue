@@ -10,7 +10,7 @@
           </a>
         </div>
         <div class="git">
-          <a href="">
+          <a href="https://github.com/Bubble-Hero"  target="_blank">
             <i class="iconfont">&#xe648;</i>
             <input type="button" value="GitHub">
           </a>
@@ -18,7 +18,8 @@
         <p class="firstp">我们的团队</p>
       </div>
 
-      <p class="we">我们是一个思维活跃、讲求协同创新的技术型团队，承担着公司商业与项目的核心研发任务，是项目建设的核心基础，我们的工作涉及大量的与各部门、各单位的沟通协调，所以，我们要求团队成员不仅需要过硬的专业水平，还必须爱岗敬业，严格遵循职业操守。</p>
+      <p class="we">我们是一个思维活跃、讲求协同创新的技术型团队，颜值与技术支撑着一切，承担着客户公司商业与项目的核心研发任务，是项目建设的核心基础，我们的工作涉及大量的与各部门、各单位的沟通协调，所以，我们要求团队成员不仅需要过硬的专业水平，还必须爱岗敬业，严格遵循职业操守。</p>
+      <p class="we">选我们，就对了！</p>
       <div class="people">
         <div class="one">
           <div class="pic">
@@ -375,6 +376,7 @@
       line-height: 3rem;
       padding: 0 9rem;
       color: dimgray;
+      margin-bottom: 3rem;
     }
     .people{
       display: flex;
@@ -383,7 +385,7 @@
       .one{
         width: 50%;
         display: flex;
-        padding-top: 5rem;
+        padding-top: 1rem;
         overflow: hidden;
         border-bottom: 1px dashed #ccc;
         position: relative;
@@ -404,7 +406,7 @@
           }
         }
         ul{
-          padding-bottom: 1rem;
+          padding-bottom: 4rem;
           li{
             line-height: 2.8rem;
             text-align: center;

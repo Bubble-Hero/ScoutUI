@@ -1,4 +1,5 @@
 <template>
+  <div>
     <div class="intro">
       <index-header></index-header>
       <section>
@@ -6,6 +7,8 @@
         <intro-cont></intro-cont>
       </section>
     </div>
+    <copyright-two></copyright-two>
+  </div>
 </template>
 
 <script>
@@ -13,9 +16,10 @@
     import IntroSide from "../components/intro/introSide";
     import IntroCont from "../components/intro/introCont";
     import IndexHeader from "../components/indexComponents/IndexHeader";
+    import CopyrightTwo from "../components/footer-copyright/copyright-two";
     export default {
         name: "intro",
-      components: {IndexHeader, IntroCont, IntroSide},
+      components: {CopyrightTwo, IndexHeader, IntroCont, IntroSide},
       mounted(){
 
       }
@@ -26,11 +30,14 @@
 .intro{
   display: flex;
   flex-direction: column;
-  margin-left: 28rem;
+  padding-left: 27rem;
 }
 section{
   display: flex;
-  margin-top: 65px;
+ padding-top: 65px;
+}
+.footer{
+  background-color: #fff;
 }
 
 </style>

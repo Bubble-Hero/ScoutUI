@@ -4,29 +4,34 @@
       <img src="../../assets/img/LOGO-transparent.png" >
       <h3>Scout<b style="color:#641385;">UI</b></h3>
     </div>
-
+    <router-link to="/intro" @click="slideUL">
     <span class="liTitle">指南     ></span>
+    </router-link>
     <ul class="slideUL">
       <li>关于 Scout UI</li>
       <li>设计理念</li>
       <li>兼容</li>
       <li>相关链接</li>
     </ul>
+    <router-link @click="slideUL" to="/compo/logincomcon1">
     <span class="liTitle">组件     ></span>
+    </router-link>
     <ul class="slideUL">
       <li>功能一</li>
       <li>功能二</li>
       <li>功能三</li>
       <li>功能四</li>
     </ul>
-    <span class="liTitle">团队     ></span>
+    <router-link to="/team" @click="slideUL">
+    <span class="liTitle">关于我们     ></span>
+    </router-link>
     <ul class="slideUL">
-      <li>团队介绍</li>
-      <li>团队成员</li>
-    </ul>
-    <span class="liTitle">客户案例     ></span>
-    <ul class="slideUL">
-
+      <router-link to="/team" tag="li">
+        为什么要选择我们？
+      </router-link>
+      <li>支持团队</li>
+      <li>租聘团队</li>
+      <li>购买团队</li>
     </ul>
   </div>
 
@@ -37,12 +42,19 @@
     export default {
         name: "introSide",
       mounted(){
-          $(function(){
-            $(".side span").stop().click(function(){
-              $(this).next().stop().slideToggle(500);
-            });
-        })
+        //   $(function(){
+        //     $(".side span").stop().click(function(){
+        //       $(this).next().stop().slideToggle(500);
+        //     });
+        // })
 
+
+      },
+      methods:{
+          slideUL(){
+            alert(1)
+            $(".slideUL").stop().slideToggle(500);
+          }
       }
 
     }
@@ -74,7 +86,7 @@ ul{
 }
   .side{
       width: 270px;
-      background: rgba(226,226,226,.5);
+      background: #fff;
       padding: 83px 0 40px;
       border: 1px solid lightgray;
       position: fixed;
