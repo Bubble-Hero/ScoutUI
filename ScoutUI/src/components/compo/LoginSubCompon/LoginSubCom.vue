@@ -100,9 +100,10 @@
     background:#f6f6f6
   }
   .code-body{
-    width: 100%;
+    width: 90%;
     height: 450px;
     overflow: auto;
+    margin:auto
   }
   textarea{
     width: 100%;
