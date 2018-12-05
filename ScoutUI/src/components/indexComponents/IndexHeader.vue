@@ -1,6 +1,6 @@
 <template>
     <div class="commonHeader">
-      <a href="#"><p class="webName">Scout<span style="color: #641385;">UI</span></p></a>
+      <router-link to="/index"><p class="webName">Scout<span style="color: #641385;">UI</span></p></router-link>
       <div class="commonHeaderR">
         <input type="text" placeholder="Search...">
         <router-link to="/"><div class="dropdown">
@@ -56,6 +56,7 @@
     font-size: 40px;
     line-height: 65px;
     color: #17b6ad;
+
 }
 .commonHeaderR{
   display: flex;
