@@ -17,7 +17,10 @@
           <common-box></common-box>
           <!--模板盒子--------------------------->
 
-
+          <!-------------嵌套循环轮播--------->
+          <swiper-box></swiper-box>
+          <!------------响应后台左侧边栏----------->
+          <left-box></left-box>
 
           <div class="page-component-up-box">
             <div class="page-component-up">
@@ -37,9 +40,11 @@
     import IndexHeader from "../components/indexComponents/IndexHeader";
     import IntroSide from "../components/intro/introSide";
     import CommonBox from "../components/compo/commonBox";
+    import SwiperBox from "../components/compo/swiperlist/swiperBox";
+    import LeftBox from "../components/compo/Leftlist/LeftBox";
     export default {
         name: "compo",
-      components: {CommonBox, IntroSide, IndexHeader},
+      components: {LeftBox, SwiperBox, CommonBox, IntroSide, IndexHeader},
       mounted(){
           $(".page-component-up-box").click(function(){
               var speed=300;//滑动的速度
