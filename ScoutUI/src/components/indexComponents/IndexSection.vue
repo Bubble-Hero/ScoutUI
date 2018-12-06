@@ -11,7 +11,9 @@
         <div class="section1">
             <div class="whyBox">
               <div class="whyBoxInner">
-                <h1 class="D-change">Why choose ScoutUI ?</h1>
+                <router-link to="/team">
+                  <h1 class="D-change">Why choose ScoutUI ?</h1>
+                </router-link>
                 <router-link to="/intro">
                   <h1 class="D-change">Start</h1>
                 </router-link>
@@ -61,7 +63,7 @@
       },
       methods:{
           changeColor(){
-            let colorArr=["rgb(100, 19, 133)","#17b6ad","#ff0","#2D0","#3FA","#705"]
+            let colorArr=["rgb(100, 19, 133)","#ff0","#2D0","#705"]
             //颜色随机
             $(".D-change").hover(function () {
               //放在里面。每移上一次，获取一次随机数
@@ -74,13 +76,29 @@
               $(this).css({color:"#fff"})
               $(this).removeClass("fff")
             })
-          }
+          },
+        changeLogo(){
+            //首页logo由远到近
+          $(".logoImg").animate({
+                width:"250px",
+                height:"250px"
+          },200)
+          $(".logoImg").css({
+            transition:"1.5s",
+            transform:"rotate(360deg)"
+          })
+          $(".logoBoxR h1").animate({
+           fontSize:'45px'
+          },1000)
+        }
       },
       mounted(){
           this.changeColor()
+        this.changeLogo()
       },
       updated(){
         this.changeColor()
+        this.changeLogo()
       }
     }
 </script>
@@ -98,13 +116,14 @@
   justify-content: center;
 }
   .logoImg{
-    width: 250px;
-    height: 250px;
+    width: 20px;
+    height: 20px;
     margin-right: 40px;
     cursor: pointer;
   }
+
   .logoBoxR h1{
-    font-size:45px ;
+    font-size:100px ;
     line-height:68px ;
     color: #fff;
   }
@@ -177,7 +196,6 @@
     width: 200px;
     margin: 0 auto;
     color:#17b6ad;
-    font-sizd:25px;
     line-height: 30px;
   }
 </style>

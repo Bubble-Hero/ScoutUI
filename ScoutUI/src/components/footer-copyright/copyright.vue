@@ -35,6 +35,10 @@
     background: transparent;
       a {
       padding: 0 5px;
+        color: #999;
+    }
+    a:hover{
+      color: #007aff;
     }
     img{
       display: inline-block;width: 60px;;

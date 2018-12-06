@@ -20,11 +20,13 @@ export default new Router({
     },
     {
       path: '/index',
-      component: index
+      component: index,
+      name:'index'
     },
     {
       path: '/intro',
-      component: intro
+      component: intro,
+      name: 'intro'
     },
     {
       path: '/compo',
@@ -37,11 +39,13 @@ export default new Router({
     },
     {
       path: '/team',
-      component: team
+      component: team,
+      name:'team'
     },
     {
       path: '/example',
-      component: example
+      component: example,
+      name:'example'
     }
   ]
 })
