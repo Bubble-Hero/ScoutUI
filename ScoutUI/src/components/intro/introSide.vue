@@ -4,28 +4,22 @@
       <img src="../../assets/img/LOGO-transparent.png" >
       <h3>Scout<b style="color:#641385;">UI</b></h3>
     </div>
-    <router-link to="/intro" @click="slideUL">
-    <span class="liTitle">指南     ></span>
-    </router-link>
+    <span class="liTitle" @click="slideUL">指南     ></span>
     <ul class="slideUL">
       <li>关于 Scout UI</li>
       <li>设计理念</li>
       <li>兼容</li>
       <li>相关链接</li>
     </ul>
-    <router-link @click="slideUL" to="/compo/logincomcon1">
-    <span class="liTitle">组件     ></span>
-    </router-link>
-    <ul class="slideUL">
+    <span class="liTitle" @click="slideUL2">组件     ></span>
+    <ul class="slideUL2">
       <li>功能一</li>
       <li>功能二</li>
       <li>功能三</li>
       <li>功能四</li>
     </ul>
-    <router-link to="/team" @click="slideUL">
-    <span class="liTitle">关于我们     ></span>
-    </router-link>
-    <ul class="slideUL">
+    <span class="liTitle" @click="slideUL3">关于我们     ></span>
+    <ul class="slideUL3">
       <router-link to="/team" tag="li">
         为什么要选择我们？
       </router-link>
@@ -42,19 +36,23 @@
     export default {
         name: "introSide",
       mounted(){
-        //   $(function(){
-        //     $(".side span").stop().click(function(){
-        //       $(this).next().stop().slideToggle(500);
-        //     });
-        // })
-
-
+        // $(".slideUL").css({display:"none"})
+        // $(".slideUL2").css({display:"none"})
+        // $(".slideUL3").css({display:"none"})
       },
       methods:{
           slideUL(){
-            alert(1)
+            this.$router.push({name:"intro"})
             $(".slideUL").stop().slideToggle(500);
-          }
+          },
+        slideUL2(){
+          this.$router.push({name:"loginComponCon1"})
+          $(".slideUL2").stop().slideToggle(500);
+        },
+        slideUL3(){
+          this.$router.push({name:"team"})
+          $(".slideUL3").stop().slideToggle(500);
+        }
       }
 
     }

@@ -21,3 +21,7 @@ new Vue({
     return h(App)
   }
 })
+
+router.afterEach((to,from,next) => {
+  window.scrollTo(0,0);
+});
