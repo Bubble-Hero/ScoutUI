@@ -68,6 +68,7 @@
   .guide h2{
     font-size: 32px;
     color: #25313d;
+    margin-top: 50px;
   }
   .about{
 

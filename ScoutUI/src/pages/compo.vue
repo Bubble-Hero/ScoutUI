@@ -58,9 +58,11 @@
     import FooterBox from "../components/compo/lc/footerBox";
     import HeaderBox from "../components/compo/lc/headerBox";
     import CopyrightTwo from "../components/footer-copyright/copyright-two";
+    import SlideUpBox from "../components/compo/slideUp/SlideUpBox";
     export default {
         name: "compo",
       components: {
+        SlideUpBox,
         CopyrightTwo,
         HeaderBox,LeftBox,ClassifyMenuBox,Leftcompon,FooterBox,SwiperBox, LoginSubBox,GoodlistBox,LoginCompon, CommonBox, IntroSide, IndexHeader},
       mounted(){

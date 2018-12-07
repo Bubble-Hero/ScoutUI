@@ -97,8 +97,8 @@ ul{
   }
 
 ::-webkit-scrollbar {
-  width: 14px;
-  background:linear-gradient(to right,#17b6ad 50%,#641385) ;
+  width: 12px;
+  background:linear-gradient(to right,#17b6ad 45%,#641385) ;
 }
 
 
