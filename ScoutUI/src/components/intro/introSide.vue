@@ -6,10 +6,10 @@
     </div>
     <span class="liTitle" @click="slideUL">指南     ></span>
     <ul class="slideUL">
-      <li>关于 Scout UI</li>
-      <li>设计理念</li>
-      <li>兼容</li>
-      <li>相关链接</li>
+      <li @click="Top">关于 Scout UI</li>
+      <li @click="design">设计理念</li>
+      <li @click="Jian">兼容</li>
+      <li @click="url">相关链接</li>
     </ul>
     <span class="liTitle" @click="slideUL2">组件     ></span>
     <ul class="slideUL2">
@@ -43,6 +43,9 @@
       methods:{
           slideUL(){
             this.$router.push({name:"intro"})
+            window.scrollTo(0,0)
+            //停止当前重复的动画
+            $(".slideUL").children("li").removeClass("add")
             $(".slideUL").stop().slideToggle(500);
           },
         slideUL2(){
@@ -52,6 +55,22 @@
         slideUL3(){
           this.$router.push({name:"team"})
           $(".slideUL3").stop().slideToggle(500);
+        },
+        Top(){
+          //关于
+          window.scrollTo(0,80)
+        },
+         design(){
+          //设计理念
+          window.scrollTo(0,500)
+        },
+        Jian(){
+          //兼容
+          window.scrollTo(0,1180)
+        },
+        url(){
+          //相关链接
+          window.scrollTo(0,1420)
         }
       }
 
@@ -60,6 +79,9 @@
 </script>
 
 <style lang="scss" scoped>
+  .add{
+    background:rgba(23,173,182,.4);color:white!important;
+  }
 ul{
     li{
       cursor: pointer;

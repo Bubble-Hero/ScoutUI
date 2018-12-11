@@ -99,6 +99,7 @@
   .row{
     width: 100%;
     padding: 50px;
+    padding-top:40px ;
     background-color: #fff;
   }
   .com{
@@ -106,7 +107,6 @@
     height: 100%;}
   .com-header{
     padding:0 0 60px;
-    margin-left: 20px;
     margin-right: 160px;
     /*background: linear-gradient(to right ,#17b6ad,white);*/
     border-bottom: 2px solid #17b6ad;
