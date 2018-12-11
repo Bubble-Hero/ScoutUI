@@ -30,7 +30,7 @@
         结果可控：用户可以自由的进行操作，包括撤销、回退和终止当前操作等
       </p>
     </div>
-    <div class="about">
+    <div class="about" style="padding-bottom: 150px">
       <h3>兼容</h3>
       <p>
         目前只支持 Vue.js 2.x 版本。<br />
@@ -61,7 +61,7 @@
   .guide{
     padding: 50px;
     width: 100%;
-    padding-top:10px ;
+    padding-top:40px ;
     padding-bottom: 30px;
     background-color: #fff;
   }
@@ -70,7 +70,7 @@
     color: #25313d;
   }
   .about{
-
+    padding-bottom: 100px;
   }
   .about h3{
     font-size:22px ;
